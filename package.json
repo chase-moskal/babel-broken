@@ -1,0 +1,19 @@
+{
+  "name": "babel-broken",
+  "version": "0.0.0-dev.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile-fails-with-babelrc": "rimraf dist && babel . --out-dir dist",
+    "compile-succeeds-with-cli-options": "rimraf dist && babel . --out-dir dist --ignore dist --ignore node_modules --ignore ignore-this",
+    "test": "exit 0"
+  },
+  "keywords": [],
+  "author": "Chase Moskal <chasemoskal@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "rimraf": "^2.6.3"
+  }
+}
