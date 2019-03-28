@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile-fails-with-babelrc": "rimraf dist && babel . --out-dir dist",
-    "compile-succeeds-with-cli-options": "rimraf dist && babel . --out-dir dist --ignore dist --ignore node_modules --ignore ignore-this",
+    "prepare": "rimraf dist && babel . --out-dir dist",
     "test": "exit 0"
   },
   "keywords": [],
